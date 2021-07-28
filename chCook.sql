@@ -4,7 +4,7 @@ use chCook;
 CREATE TABLE `admin` (
   `username` varchar(20) NOT NULL,
   `password` varchar(20) NOT NULL,
-  `role` varchar(2) NOT NULL
+  `role` varchar(10) NOT NULL
 );
 
 INSERT INTO `admin` (`username`, `password`, `role`) VALUES ('Marela', '12345', 'manager'), ('Audie', '12345', 'staff');

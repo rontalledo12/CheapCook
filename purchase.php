@@ -3,7 +3,8 @@
 	if(isset($_POST['productid'])){
  
 		$customer=$_POST['customer'];
-		$sql="insert into purchase (customer, date_purchase) values ('$customer', NOW())";
+		$status='Pending';
+		$sql="insert into purchase (customer, date_purchase,status) values ('$customer', NOW(),'$status')";
 		$conn->query($sql);
 		$pid=$conn->insert_id;
  
