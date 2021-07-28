@@ -12,7 +12,7 @@ $username = $_SESSION['username'];
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php"><b><i>Silogan Ni Gian</i></b></a>
+      <a class="navbar-brand" href="index.php"><b><i>Cheap Cook</i></b></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -21,15 +21,18 @@ $username = $_SESSION['username'];
         <li><a href="order.php">Order</a></li>
         <li><a href="sales.php">Sales</a></li>
         <li>
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maintenace <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" style="margin-right:580px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maintenace <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="product.php">Products</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="category.php">Category</a></li>
           </ul>
-          <li><a style="color:black; margin-left:400px;">Welcome <?php echo $username;?>
-          <li><a href="logout.php" style="color:red">Logout</a></li>
-          </a></li>
+          <li>
+         <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $username;?><span class="caret"></span></a>
+         <ul class="dropdown-menu">
+         <li><a href="logout.php" style="color:red">Logout</a></li>
+         </ul> 
+         </a></li>
         </li>
       </ul>
     </div>

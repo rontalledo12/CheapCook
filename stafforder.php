@@ -1,6 +1,6 @@
 <?php include('header.php'); ?>
 <body>
-<?php include('navbar.php'); ?>
+<?php include('staffnavbar.php'); ?>
 <div class="container">
 	<h1 class="page-header text-center">ORDER</h1>
 	<form method="POST" action="purchase.php">
@@ -53,6 +53,15 @@
 	    	$('input:checkbox').not(this).prop('checked', this.checked);
 		});
 	});
+
+function decVal()
+{
+		var value = parseInt(document.getElementByID('prodavail').value, 10);
+		value = isNaN(value) ? 0 : value;
+		value--;
+		document.getElementByID('prodavail').value = value;
+}
+
 
 </script>
 </body>

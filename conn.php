@@ -1,6 +1,6 @@
 <?php
 
-$conn = new mysqli('localhost', 'root', '', 'silogan');
+$conn = new mysqli('localhost', 'root', '', 'chCook');
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

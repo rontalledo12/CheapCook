@@ -17,7 +17,7 @@ if(mysqli_num_rows($result) > 0)
 		$_SESSION['username'] = $username;
 	
 	}
-	header("Location: staffindex.php");
+	header("Location: index.php");
 }
 else
 {

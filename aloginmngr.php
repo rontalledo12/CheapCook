@@ -6,9 +6,9 @@
 <section class="login-block">
     <div class="container">
 	<div class="row">
-		<div class="col-md-4 login-sec">
-		    <h2 class="text-center">Staff Login</h2>
-	<form class="login-form" action="alogindb.php" method="POST">
+	<div class="col-md-4 login-sec">
+	<h2 class="text-center">Manager Login</h2>
+	<form class="login-form" action="aloginmngrdb.php" method="POST">
   	<div class="form-group">
     <label for="exampleInputEmail1" class="text-uppercase">Username</label>
     <input type="text" class="form-control" placeholder="Username" name="username">
@@ -18,21 +18,21 @@
     <label for="exampleInputPassword1" class="text-uppercase">Password</label>
     <input type="password" class="form-control" placeholder="Password" name="password">
   	</div>
-	  
   
     <div class="form-check">
     <label class="form-check-label">
     </label>
     <button type="submit" class="btn btn-login float-right">Login</button>
+    <a href="alogin.php">Login as Staff</a>
   </div>
-  <a href="aloginmngr.php">Login as Manager</a>
+  
 </form>
 <div class="copy-text"><i class="fa fa-heart"></i></div>
 </div>
 		<div class="col-md-8 banner-sec">   
             <div class="carousel-inner" role="listbox">
     			<div class="carousel-item active">
-      <img class="d-block img-fluid" src="upload/imgcook.jpg">
+      <img class="d-block img-fluid" src="upload/mngr.jpg">
       				<div class="carousel-caption d-none d-md-block">
         				<div class="banner-text">
             <h2>CheapCook</h2>
@@ -59,10 +59,10 @@ background: linear-gradient(to bottom, #FFB88C, #DE6262); /* W3C, IE 10+/ Edge, 
 float:left;
 width:100%;
 padding-bottom: 500px;
-padding : 50px 0;
+padding : 180px;
 }
 img{
-	padding: 31px;
+	padding: 20px;
 }
 
 .container{background:#fff; border-radius: 10px; box-shadow:15px 20px 0px rgba(0,0,0,0.1);}
