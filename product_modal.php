@@ -31,6 +31,22 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-3" style="margin-top:7px;">
+                                <label class="control-label">Availability:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select class="form-control" name="prodavail">
+                                    <option style="visibility:hidden; display:none"><?php echo $row['prodavail']; ?></option>
+
+                                    <option value="Available">Available</option>
+                                    
+                                    <option value="Not Available">Not Available</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3" style="margin-top:7px;">
                                 <label class="control-label">Category:</label>
                             </div>
                             <div class="col-md-9">
@@ -60,8 +76,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
-    
+                 
+                                            
                     </div>
                 </div>
 			</div>

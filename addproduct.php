@@ -3,8 +3,10 @@
 
 	$pname=$_POST['pname'];
 	$pdets=$_POST['productdetails'];
+	$prodavail=$_POST['prodavail'];
 	$price=$_POST['price'];
 	$category=$_POST['category'];
+	$fileinfo=PATHINFO($_FILES["photo"]["name"]);
 
 
 
@@ -17,9 +19,12 @@
 	$location="upload/" . $newFilename;
 	}
 	
-	$sql="insert into product (productname, productdetails, categoryid, price, photo) values ('$pname','$pdets', '$category', '$price', '$location')";
+	$sql="insert into product (productname, productdetails, prodavail, categoryid, price, photo) values ('$pname','$pdets', '$prodavail','$category', '$price', '$location')";
 	$conn->query($sql);
 
 	header('location:product.php');
+
+?>
+
 
 ?>

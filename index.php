@@ -1,5 +1,10 @@
 <?php include('header.php'); ?>
 <body>
+<style>
+	body {
+		background-image: url("upload/bg1.jpg")
+	}
+</style>
 <?php include('navbar.php'); ?>
 <div class="container">
 	<h1 class="page-header text-center">MENU</h1>
@@ -9,7 +14,7 @@
 			$fquery=$conn->query($sql);
 			$frow=$fquery->fetch_array();
 			?>
-				<li class="active"><a data-toggle="tab" href="#<?php echo $frow['catname'] ?>"><?php echo $frow['catname'] ?></a></li>
+				<li class="active"><a data-toggle="tab" style="color:black" href="#<?php echo $frow['catname'] ?>"><?php echo $frow['catname'] ?></a></li>
 			<?php
 
 			$sql="select * from category order by categoryid asc";
@@ -20,7 +25,7 @@
 			$query=$conn->query($sql);
 			while($row=$query->fetch_array()){
 				?>
-				<li><a data-toggle="tab" href="#<?php echo $row['catname'] ?>"><?php echo $row['catname'] ?></a></li>
+				<li><a data-toggle="tab" style="color:black" href="#<?php echo $row['catname'] ?>"><?php echo $row['catname'] ?></a></li>
 				<?php
 			}
 		?>

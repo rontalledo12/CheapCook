@@ -4,6 +4,7 @@
 	$id=$_GET['product'];
 	$pdets=$_POST['productdetails'];
 	$pname=$_POST['pname'];
+	$prodavail=$_POST['prodavail'];
 	$category=$_POST['category'];
 	$price=$_POST['price'];
 
@@ -15,7 +16,7 @@
 
 	
 
-	$sql="update product set productname='$pname',productdetails='$pdets', categoryid='$category', price='$price', photo='$location' where productid='$id'";
+	$sql="update product set productname='$pname',productdetails='$pdets', prodavail='$prodavail', categoryid='$category', price='$price', photo='$location' where productid='$id'";
 	$conn->query($sql);
 
 	header('location:product.php');

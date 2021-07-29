@@ -1,4 +1,9 @@
 <?php include('header.php'); ?>
+<style>
+	body {
+		background-image: url("upload/bg1.jpg")
+	}
+</style>
 <body>
 <?php include('navbar.php'); ?>
 <div class="container">
@@ -9,7 +14,7 @@
 		</div>
 	</div>
 	<div style="margin-top:10px;">
-		<table class="table table-striped table-bordered">
+		<table class="table table-striped table-bordered" style="background-color: white">
 			<thead>
 				<th>Category Name</th>
 				<th>Action</th>

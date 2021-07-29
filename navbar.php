@@ -21,14 +21,14 @@ $username = $_SESSION['username'];
         <li><a href="order.php">Order</a></li>
         <li><a href="sales.php">Sales</a></li>
         <li>
-          <a href="#" class="dropdown-toggle" style="margin-right:580px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maintenace <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" style="margin-right:550px" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Maintenace <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="product.php">Products</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="category.php">Category</a></li>
           </ul>
           <li>
-         <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $username;?><span class="caret"></span></a>
+         <a href="#" class="dropdown-toggle"  data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Manager <?php echo $username;?><span class="caret"></span></a>
          <ul class="dropdown-menu">
          <li><a href="logout.php" style="color:red">Logout</a></li>
          </ul> 

@@ -13,8 +13,36 @@
                             <div class="col-md-3" style="margin-top:7px;">
                                 <label class="control-label">Product Name:</label>
                             </div>
+                            
                             <div class="col-md-9">
                                 <input type="text" class="form-control" name="pname" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top:10px;">
+                        <div class="row">
+                            <div class="col-md-3" style="margin-top:7px;">
+                                <label class="control-label">Product Details:</label>
+                            </div>
+                            
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" name="productdetails" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3" style="margin-top:7px;">
+                                <label class="control-label">Availability:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <select class="form-control" name="prodavail">
+                                    
+
+                                    <option value="Available">Available</option>
+                                    
+                                    <option value="Not Available">Not Available</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -48,7 +76,16 @@
                             </div>
                         </div>
                     </div>
-                
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-3" style="margin-top:7px;">
+                                <label class="control-label">Photo:</label>
+                            </div>
+                            <div class="col-md-9">
+                                <input type="file" name="photo">
+                            </div>
+                        </div>
+                    </div>                   
                 </div>
 			</div>
             <div class="modal-footer">

@@ -4,7 +4,8 @@ require_once('conn.php');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$sql = "SELECT * FROM admin WHERE username='$username' AND password='$password' ";
+$role = 'staff';
+$sql = "SELECT * FROM admin WHERE username='$username' AND password='$password' AND role='$role' ";
 $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) > 0)
 {
@@ -21,6 +22,6 @@ if(mysqli_num_rows($result) > 0)
 }
 else
 {
-	echo "Invalid email or password". $sql;
+	echo "Invalid email or password";
 }
 ?>
