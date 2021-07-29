@@ -55,7 +55,7 @@ INSERT INTO `product` (`productid`, `categoryid`,  `productname`, `productdetail
 (31, 4, 'Cheeseburger w/ Fries', '(1x)Beef, (1x)Cheese, (1x)Fries', 'Available', 90, 'upload/b4.jpg'),
 (32, 4, 'Burgersteak', '(1x)Beef, (1x)Rice, (1x)Ice Tea', 'Not Available', 65, 'upload/b5.jpg'),
 
-(33, 5, '7-UP', '250ml', 'Not Available', 10, 'upload/d1.jpg'),
+(33, 5, '7-UP', '250ml', 'Not Available', 10, 'upload/d6.jpg'),
 (34, 5, 'Coke', '250ml', 'Available', 10, 'upload/d2.jpg'),
 (35, 5, 'Mountain Dew', '300ml', 'Available', 12, 'upload/d3.jpg'),
 (36, 5, 'Ice Tea(G)', '(1x - Glass)Ice Tea', 'Available', 10, 'upload/d4.jpg'),
@@ -70,9 +70,11 @@ CREATE TABLE `purchase` (
   `status` varchar(100) NOT NULL
 ); 
 
+
+
 INSERT INTO `purchase` (`purchaseid`, `customer`, `total`, `date_purchase`, `status`) VALUES
-(12, 'Pautams', 222, '2019-12-06 15:29:00', 'Complete'),
-(13, 'Vlz', 183, '2020-10-09 20:19:43', 'Complete');
+(12, 'Pautams', 440, '2019-7-29 15:29:00', 'Complete'),
+(13, 'Vlz', 195, '2021-07-29 13:19:43', 'Complete');
 
 
 CREATE TABLE `purchase_detail` (
@@ -101,7 +103,6 @@ ALTER TABLE `purchase`
 
 ALTER TABLE `purchase_detail`
  ADD PRIMARY KEY (`pdid`);
-
 
 ALTER TABLE `category`
 MODIFY `categoryid` int(11) NOT NULL AUTO_INCREMENT;

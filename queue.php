@@ -4,7 +4,7 @@ session_start();
 $complete=false;
 if (isset($_GET['complete'])) {
 	$id = $_GET['complete'];
-	mysqli_query($conn, "UPDATE purchase SET status='Complete' WHERE purchaseid=$id AND status='Pending' ");
+	mysqli_query($conn, "UPDATE purchase SET status='Complete' WHERE purchaseid=$id AND status='Pending'");
 	header('location: sales.php');
 }
 if (isset($_GET['remove'])) {

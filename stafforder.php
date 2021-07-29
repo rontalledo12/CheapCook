@@ -27,13 +27,18 @@
 					while($row=$query->fetch_array()){
 						?>
 						<tr>
-							<td class="text-center"><input type="checkbox" value="<?php echo $row['productid']; ?>||<?php echo $iterate; ?>" name="productid[]" style=""></td>
+							<td class="text-center"><?php if($row['prodavail']=='Available'){?><input type="checkbox" value="<?php echo $row['productid']; ?>||<?php echo $iterate; ?>" name="productid[]" style=""><?php }?></td>
 							<td><?php echo $row['catname']; ?></td>
 							<td><?php echo $row['productname']; ?></td>
 							<td><?php echo $row['productdetails']; ?></td>
 							<td><?php echo $row['prodavail']; ?></td>
 							<td class="text-right">₱ <?php echo number_format($row['price'], 2); ?></td>
-							<td><input type="text" class="form-control" name="quantity_<?php echo $iterate; ?>"></td>
+							<td><?php if($row['prodavail']=='Available'){?>
+							<input type="text" class="form-control" name="quantity_<?php echo $iterate; ?>">
+				
+				
+				
+					<?php }?></td>
 						</tr>
 						<?php
 						$iterate++;

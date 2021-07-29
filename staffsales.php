@@ -9,6 +9,7 @@
 <div class="container">
 	<h1 class="page-header text-center">SALES</h1>
 	<table class="table table-striped table-bordered" style="background-color: white">
+			</th></thead>
 		<thead>
 			<th>Date</th>
 			<th>Customer</th>
